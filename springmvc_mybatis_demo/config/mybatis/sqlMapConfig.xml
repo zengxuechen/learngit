@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 全局配置  按需添加
+    1.cacheEnabled 
+
+　　这个配置使全局的映射器启用或禁用缓存。
+
+　　有效值：true,false
+
+　　默认值：true
+
+　　2.lazyLoadingEnabled
+
+　　全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载。
+
+　　有效值：true,false
+
+　　默认值：true
+
+　　3.aggressiveLazyLoading 
+
+　　当启用时，有延迟加载属性的对象在被调用时将会完全加载任意属性。否则，
+
+　　每种属性将会按需要加载。
+
+　　有效值：true,false
+
+　　默认值：true
+
+　　4.mult ipleResultSetsEnabled
+
+　　允许或不允许多种结果集从一个单独的语句中返回（需要适合的驱动）
+
+　　有效值：true,false
+
+　　默认值：true
+
+　　5.useColumnLabel 
+
+　　使用列标签代替列名。不同的驱动在这方便表现不同。参考驱动文档或充分测
+
+　　试两种方法来决定所使用的驱动。
+
+　　有效值：true,false
+
+　　默认值：true
+
+　　6.useGeneratedKeys 
+
+　　允许JDBC支持生成的键。需要适合的驱动。如果设置为true则这个设置强制
+
+　　生成的键被使用，尽管一些驱动拒绝兼容但仍然有效（比如 Derby） 
+
+　　有效值：true,false
+
+　　默认值：false
+
+　　7.autoMappingBehavior 
+
+　　指定MyBatis如何自动映射列到字段/属性。PARTIAL只会自动映射简单，没有嵌套的结果。
+
+　　FULL会自动映射任意复杂的结果（嵌套的或其他情况）
+
+　　有效值：NONE,PARTIAL,FULL
+
+　　默认值：PARTIAL
+
+　　8.defaultExecutorType 
+
+　　配置默认的执行器。SIMPLE 执行器没有什么特别之处。REUSE执行器重用预处理语句。
+
+　　BATCH 执行器重用语句和批量更新
+
+　　有效值：SIMPLE,REUSE,BATCH
+
+　　默认值：SIMPLE 
+
+　　9.defaultStatementTimeout 
+
+　　设置超时时间，它决定驱动等待一个数据库响应的时间。
+
+　　有效值：Any，positive，integer
+
+　　默认值：Not Set(null) 
+     -->
+<!--     <settings> -->
+<!--         <setting name="cacheEnabled" value="true" />   -->
+<!--         <setting name="lazyLoadingEnabled" value="true" />   -->
+<!--         <setting name="multipleResultSetsEnabled" value="true" />   -->
+<!--         <setting name="useColumnLabel" value="true" />   -->
+<!--         <setting name="useGeneratedKeys" value="false" />   -->
+<!--         <setting name="enhancementEnabled" value="false" />   -->
+<!--         <setting name="defaultExecutorType" value="SIMPLE" />  -->
+<!--     </settings> -->
+
+	<!-- 配置别名 -->
+	<typeAliases>
+		<!-- 批量扫描别名,po包 -->
+		<package name="com.artrade.ssm.po" />
+	</typeAliases>
+
+
+</configuration>

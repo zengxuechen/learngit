@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="springmvc_mybatis_demo">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.artrade.ssm.controller"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.artrade.ssm.po"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.artrade.ssm.mapper"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.artrade.ssm.service.impl"/>
+        <property name="context-root" value="springmvc_mybatis_demo"/>
+        <property name="java-output-path" value="/springmvc_mybatis_demo/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
